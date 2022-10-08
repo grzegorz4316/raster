@@ -1,0 +1,27 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Plastiki</h1>
+<%= link_to "New plastic", new_plastic_path, class: 'btn btn-primary' %>
+<p>
+          
+      <div id="plastics" class="container">
+            <div class="row ">
+              <% @plastics.each do |plastic| %>
+                <div class="container" style="width: 8rem;">
+                  <div class="card text-center">
+                    <%= image_tag "plastics/BMT 7.png" %> 
+                    
+                    <h5 ><%= plastic.name %></h5>
+                    <%= link_to "Pokaż", plastic, class: 'btn btn-primary btn-sm' %>
+                    <%= button_to "Usuń", plastic, method: :delete, class: 'btn btn-danger btn-sm' %>
+                  </div>
+                  <p>  
+                </div>
+              <% end %>
+            </div>
+        </div>  
+      
+
+
+        
+       

@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @plastic %>
+
+<div>
+  <%= link_to "Edit this plastic", edit_plastic_path(@plastic) %> |
+  <%= link_to "Back to plastics", plastics_path %>
+
+  <%= button_to "Destroy this plastic", @plastic, method: :delete %>
+</div>

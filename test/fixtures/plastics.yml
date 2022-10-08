@@ -1,0 +1,25 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  mold1: MyString
+  mold1_cavity: 1
+  mold1_weight: 9.99
+  mold1_speed: 1
+  mold2: MyString
+  mold2_cavity: 1
+  mold2_weight: 9.99
+  mold2_speed: 1
+  description: MyString
+
+two:
+  name: MyString
+  mold1: MyString
+  mold1_cavity: 1
+  mold1_weight: 9.99
+  mold1_speed: 1
+  mold2: MyString
+  mold2_cavity: 1
+  mold2_weight: 9.99
+  mold2_speed: 1
+  description: MyString
