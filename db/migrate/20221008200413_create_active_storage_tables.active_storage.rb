@@ -33,8 +33,9 @@ class CreateActiveStorageTables < ActiveRecord::Migration[5.2]
         t.datetime :created_at, null: false
       end
 
-      t.index [ :record_type, :record_id, :name, :blob_id ], name: :index_active_storage_attachments_uniqueness, unique: true
+      t.index [ :record_type, :record_id, :name, :image, :blob_id ], name: :index_active_storage_attachments_uniqueness, unique: true
       t.foreign_key :active_storage_blobs, column: :blob_id
+      #dodane :image
     end
 
     create_table :active_storage_variant_records, id: primary_key_type do |t|

@@ -72,6 +72,7 @@ class PlasticsController < ApplicationController
     # Only allow a list of trusted parameters through.
     def plastic_params
       params.require(:plastic).permit(:name, :image, :mold1, :mold1_cavity, :mold1_weight, :mold1_speed, :mold2, :mold2_cavity, :mold2_weight, :mold2_speed, :description)
+    #dodane :image
     end
 
     

@@ -1,55 +1,55 @@
 <div id="<%= dom_id plastic %>">
   <p>
-    <strong>Name:</strong>
-    <%= plastic.name %>
+    <h1><%= plastic.name %></h1>
   </p>
 
-  <% if @plastic.image.attached? %>
+  <div class="card text-center" style="width: 8rem;">
+  <p><% if @plastic.image.attached? %>
     <image src="<%=(url_for(@plastic.image))%>">
-  <% end %> 
+  <% end %> </p></div>
 
   <p>
-    <strong>Mold1:</strong>
+    <strong>Mała forma: </strong>
     <%= plastic.mold1 %>
   </p>
 
   <p>
-    <strong>Mold1 cavity:</strong>
+    <strong>Ilość gniazg: </strong>
     <%= plastic.mold1_cavity %>
   </p>
 
   <p>
-    <strong>Mold1 weight:</strong>
-    <%= plastic.mold1_weight %>
+    <strong>Waga: </strong>
+    <%= plastic.mold1_weight %> gram
   </p>
 
   <p>
-    <strong>Mold1 speed:</strong>
-    <%= plastic.mold1_speed %>
+    <strong>Ilość na godzinę: </strong>
+    <%= plastic.mold1_speed %> szt./godz.
   </p>
 
   <p>
-    <strong>Mold2:</strong>
+    <strong>Duza forma: </strong>
     <%= plastic.mold2 %>
   </p>
 
   <p>
-    <strong>Mold2 cavity:</strong>
+    <strong>Ilość gniazg: </strong>
     <%= plastic.mold2_cavity %>
   </p>
 
   <p>
-    <strong>Mold2 weight:</strong>
-    <%= plastic.mold2_weight %>
+    <strong>Waga: </strong>
+    <%= plastic.mold2_weight %> gram
   </p>
 
   <p>
-    <strong>Mold2 speed:</strong>
-    <%= plastic.mold2_speed %>
+    <strong>Ilość na godzinę: </strong>
+    <%= plastic.mold2_speed %> sz.t/godz.
   </p>
 
   <p>
-    <strong>Description:</strong>
+    <strong>Opis: </strong>
     <%= plastic.description %>
   </p>
 

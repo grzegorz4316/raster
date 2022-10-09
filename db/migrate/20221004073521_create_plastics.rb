@@ -2,6 +2,7 @@ class CreatePlastics < ActiveRecord::Migration[7.0]
   def change
     create_table :plastics do |t|
       t.string :name  
+      t.string :image #dodane
       t.string :mold1
       t.integer :mold1_cavity
       t.decimal :mold1_weight
