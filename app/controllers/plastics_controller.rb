@@ -4,10 +4,15 @@ class PlasticsController < ApplicationController
   # GET /plastics or /plastics.json
   def index
     @plastics = Plastic.all
+    
   end
 
   # GET /plastics/1 or /plastics/1.json
   def show
+    #nie wiem czy dobrze
+    #@plastic.image.attach(params[:image])
+    #redirect_to Current.plastic.image.url
+    
   end
 
   # GET /plastics/new
@@ -17,6 +22,7 @@ class PlasticsController < ApplicationController
 
   # GET /plastics/1/edit
   def edit
+    @plastic.image.attach(params[:image])
   end
 
   # POST /plastics or /plastics.json
@@ -65,7 +71,7 @@ class PlasticsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def plastic_params
-      params.require(:plastic).permit(:name, :mold1, :mold1_cavity, :mold1_weight, :mold1_speed, :mold2, :mold2_cavity, :mold2_weight, :mold2_speed, :description)
+      params.require(:plastic).permit(:name, :image, :mold1, :mold1_cavity, :mold1_weight, :mold1_speed, :mold2, :mold2_cavity, :mold2_weight, :mold2_speed, :description)
     end
 
     

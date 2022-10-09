@@ -4,7 +4,9 @@
     <%= plastic.name %>
   </p>
 
-
+  <% if @plastic.image.attached? %>
+    <image src="<%=(url_for(@plastic.image))%>">
+  <% end %> 
 
   <p>
     <strong>Mold1:</strong>
