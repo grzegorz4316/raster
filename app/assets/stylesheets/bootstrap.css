@@ -10909,6 +10909,9 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
-}
 
+  /* .custom {
+    width: 200 !important;
+  } */
+}
 /*# sourceMappingURL=bootstrap.css.map */
