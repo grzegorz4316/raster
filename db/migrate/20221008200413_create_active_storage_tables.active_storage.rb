@@ -1,5 +1,5 @@
 # This migration comes from active_storage (originally 20170806125915)
-class CreateActiveStorageTables < ActiveRecord::Migration[5.2]
+class CreateActiveStorageTables < ActiveRecord::Migration[7.0]
   def change
     # Use Active Record's configured type for primary and foreign keys
     primary_key_type, foreign_key_type = primary_and_foreign_key_types
@@ -33,7 +33,7 @@ class CreateActiveStorageTables < ActiveRecord::Migration[5.2]
         t.datetime :created_at, null: false
       end
 
-      t.index [ :record_type, :record_id, :name, :image, :blob_id ], name: :index_active_storage_attachments_uniqueness, unique: true
+      t.index [ :record_type, :record_id, :name, :blob_id ], name: :index_active_storage_attachments_uniqueness, unique: true
       t.foreign_key :active_storage_blobs, column: :blob_id
       #dodane :image
     end

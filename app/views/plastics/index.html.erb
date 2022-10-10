@@ -9,10 +9,8 @@
               <% @plastics.each do |plastic| %>
                 <div class="container" style="width: 10rem;">
                   <div class="card text-center">
-                    
                     <%= image_tag plastic.image %>
                     
-                  
                     <h5 ><%= plastic.name %></h5>
                     <div class="d-grid">
                       <div class="mb-1"><%= link_to "Pokaż", plastic, class: 'btn btn-primary btn-sm' %></div>
