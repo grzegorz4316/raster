@@ -33,6 +33,8 @@ gem "carrierwave"
 
 gem "paperclip", "~> 6.0.0"
 
+gem 'mysql2', '~> 0.5.2'
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 

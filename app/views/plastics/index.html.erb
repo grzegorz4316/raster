@@ -8,15 +8,15 @@
             <div class="row ">
               <% @plastics.each do |plastic| %>
                 <div class="container" style="width: 10rem;">
-                  <div class="card text-center">
+                  <div class="card text-center" style="height: 20rem;">
                     <%= image_tag plastic.image %>
-                    
-                    <h5 ><%= plastic.name %></h5>
-                    <div class="d-grid">
-                      <div class="mb-1"><%= link_to "Pokaż", plastic, class: 'btn btn-primary btn-sm' %></div>
-                      <div class="mb-1"><%= button_to "Usuń", plastic, method: :delete, class: 'btn btn-danger btn-sm' %></div>
-                    </div>
-
+                      <div class="position-absolute bottom-0">
+                        <h5 ><%= plastic.name %></h5>
+                        <div class="btn-group">
+                          <div class="mb-1"><%= link_to "Pokaż", plastic, class: 'btn btn-primary btn-sm' %></div>
+                          <div class="mb-1"><%= button_to "Usuń", plastic, method: :delete, class: 'btn btn-danger btn-sm' %></div>
+                        </div>
+                      </div>
                   </div>
                   <p>  
                 </div>
